@@ -140,6 +140,11 @@ params:
     assets:
       disableHLJS: true                        # 禁用 HighLight.js
 
+  page:
+    library:
+      js:
+        live2d_min: "/js/live2d_min.js"        # 看板娘的 JavaScript 文件路径
+
 # Markdown 渲染设置
 markup:
   goldmark:
