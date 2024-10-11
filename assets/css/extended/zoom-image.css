@@ -3,7 +3,7 @@
     /* 添加动画效果 */
 }
 
-.zoom-img:hover {
+.zoom-img:active {
     transform: scale(1.5);
     /* 放大比例 */
     cursor: pointer;
