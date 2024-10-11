@@ -42,9 +42,7 @@ cover:
 2. 知识覆盖面广，即便是一些基础内容，了解它们也能建立对语言的整体认知；
 3. 内容简洁明了，不要冗长重复。
 
-舍友向我推荐了qimi的相关博客，这些内容虽然有些陈旧，但其知识体系非常全面，适合快速上手。[【置顶】Go语言学习之路/Go语言教程 | 李文周的博客 (liwenzhou.com)](https://www.liwenzhou.com/posts/Go/golang-menu/)
-
-我快速浏览了该博客的目录，并结合我过往的学习经验，将Go的学习内容划分为以下知识框架：
+舍友向我推荐了qimi的相关博客，这些内容虽然有些陈旧，但其知识体系非常全面，适合快速上手。<a href="https://www.liwenzhou.com/posts/Go/golang-menu/" target="_blank">【置顶】Go语言学习之路/Go语言教程 | 李文周的博客 (liwenzhou.com)</a> 我快速浏览了该博客的目录，并结合我过往的学习经验，将Go的学习内容划分为以下知识框架：
 
 {{<mermaid>}}
 flowchart LR
