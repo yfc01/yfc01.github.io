@@ -143,7 +143,7 @@ params:
   page:
     library:
       js:
-        live2d_min: "/js/live2d_min1.js"       # 看板娘1的 JavaScript 文件路径
+        live2d_min1: "/js/live2d_min1.js"       # 看板娘1的 JavaScript 文件路径
         canvas_nest: "/js/canvas_nest.js"      # 蜂窝巢效果 JavaScript 文件路径
         anime_min: "/js/anime.min.js"          # 鼠标点击特效 JavaScript 文件路径
         fireworks: "/js/fireworks.js"          # 鼠标点击特效 JavaScript 文件路径 
