@@ -144,6 +144,7 @@ params:
     library:
       js:
         live2d_min: "/js/live2d_min.js"        # 看板娘的 JavaScript 文件路径
+        canvas_nest: "/js/canvas_nest.js"      # 蜂窝巢效果 JavaScript 文件路径
 
 # Markdown 渲染设置
 markup:

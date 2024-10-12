@@ -156,10 +156,34 @@
 {{- template "partials/templates/schema_json.html" . }}
 {{- end -}}
 
-<!-- 看板娘相关代码js文件引入 -->
+<!-- 看板娘相关代码引入 -->
 {{ with .Site.Params.page.library }}
-{{ if .js }}
-<script src="{{ .js.live2d_min | relURL }}"></script>
+  {{ if .js.live2d_min }}
+    <!-- 看板娘元素代码 -->
+    <div class="live2d_container">
+        <div id="sakana-widget"></div>
+    </div>
+    <!-- 看板娘元素代码end -->
+
+    <!-- 看板娘js文件 -->
+    <script src="{{ .js.live2d_min | relURL }}"></script>
+    <!-- 看板娘js文件end -->
+  {{ end }}
 {{ end }}
+<!-- 看板娘相关代码引入end -->
+
+
+
+<!-- 蜂窝巢效果相关代码引入 -->
+{{ with .Site.Params.page.library }}
+    {{ if .js.canvas_nest }}
+    <!-- 蜂窝巢效果元素代码 -->
+    <div id="canvas-nest-container"></div>
+    <!-- 蜂窝巢效果元素代码end -->
+
+    <!-- 蜂窝巢效果js文件 -->
+    <script src="{{ .js.canvas_nest | relURL }}"></script>
+    <!-- 蜂窝巢效果js文件end -->
+    {{ end }}
 {{ end }}
-<!-- 看板娘相关代码js文件引入end -->
+<!-- 蜂窝巢效果相关代码引入end -->
