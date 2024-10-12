@@ -7,15 +7,6 @@
 
 <head>
     {{- partial "head.html" . }}
-
-    <!-- 看板娘相关代码js文件引入 -->
-    {{ with .Site.Params.page.library }}
-    {{ if .js }}
-    <script src="{{ .js.live2d_min | relURL }}"></script>
-    {{ end }}
-    {{ end }}
-    <!-- 看板娘相关代码js文件引入end -->
-
 </head>
 
 <body class="

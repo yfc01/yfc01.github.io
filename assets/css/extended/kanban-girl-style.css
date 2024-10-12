@@ -8,6 +8,10 @@
     /* 确保容器在其他元素之上 */
 }
 
+.live2d_container a {
+    border-bottom: none;
+}
+
 /* 媒体查询：当屏幕宽度小于1024像素时隐藏容器 */
 @media (max-width: 1024px) {
     .live2d_container {
