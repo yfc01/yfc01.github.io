@@ -1,8 +1,8 @@
 .live2d_container {
     position: fixed;
     /* 设置固定定位 */
-    left: 0;
-    /* 距离屏幕左侧0像素 */
+    right: 0;
+    /* 距离屏幕右侧0像素 */
     bottom: 0;
     z-index: 5;
     /* 确保容器在其他元素之上 */

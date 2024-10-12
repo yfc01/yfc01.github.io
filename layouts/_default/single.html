@@ -62,4 +62,17 @@
   {{- end }}
 </article>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const mainElement = document.querySelector('main.main');
+    if (mainElement) {
+        console.log("成功获取到 <main> 元素:", mainElement);
+        // 在此处执行其他逻辑，例如添加样式
+        mainElement.classList.add('custom-style');
+    } else {
+        console.error("未找到 <main> 元素");
+    }
+  });
+</script>
+
 {{- end }}{{/* end main */}}
