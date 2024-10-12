@@ -187,3 +187,26 @@
     {{ end }}
 {{ end }}
 <!-- 蜂窝巢效果相关代码引入end -->
+
+
+<!-- 鼠标点击效果相关代码引入 -->
+{{ with .Site.Params.page.library }}
+    {{ if .js.anime_min }}
+        {{ if .js.fireworks }}
+
+            <!-- 鼠标点击效果元素代码 -->
+            <canvas class="fireworks"></canvas>
+            <!-- 鼠标点击效果元素代码end -->
+
+            <!-- 引入鼠标点击效果的 JS 文件 -->
+            <script src="{{ .js.anime_min | relURL }}"></script>
+            <script src="{{ .js.fireworks | relURL }}"></script>
+            <script type="text/javascript">
+                fireworks.setCanvasSize(); // 设置画布大小
+            </script>
+            <!-- 引入鼠标点击效果的 JS 文件end -->
+
+        {{ end }}
+    {{ end }}
+{{ end }}
+<!-- 鼠标点击效果相关代码引入end -->
