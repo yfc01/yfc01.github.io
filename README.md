@@ -6,7 +6,7 @@
 - [联系方式](#联系方式)
 
 ## 简介
-这是一个使用 <a href="https://gohugo.io/" target="_blank">Hugo</a> 和 <a href="https://github.com/adityatelange/hugo-PaperMod/" target="_blank">PaperMod</a> 构建的博客模板。站点页面地址：<a href="https://yfc01.github.io/" target="_blank">Thoughts and Musings (yfc01.github.io)</a>，欢迎访问。
+这是一个使用 <a href="https://gohugo.io/" target="_blank">Hugo</a> 和 <a href="https://github.com/adityatelange/hugo-PaperMod/" target="_blank">PaperMod</a> 构建的博客站点。站点页面地址：<a href="https://yfc01.github.io/" target="_blank">Thoughts and Musings (yfc01.github.io)</a>，欢迎访问。
 
 ## 安装
 ### 环境要求
