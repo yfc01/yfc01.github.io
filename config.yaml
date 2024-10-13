@@ -1,62 +1,74 @@
+# -------------------------------
 # 基本配置
+# -------------------------------
 baseURL: https://yfc01.github.io  # 博客的基本 URL
-languageCode: zh-cn                # 默认语言代码为中文简体
+languageCode: zh-cn                # 默认语言为中文简体
 title: Thoughts and Musings        # 博客的标题
 theme: hugo-PaperMod               # 使用的主题
 
+# -------------------------------
 # 功能开关
-enableInlineShortcodes: true       # 启用内联短代码功能
-enableEmoji: true                  # 启用 Emoji 表情支持
-enableRobotsTXT: true              # 允许搜索引擎爬虫抓取博客内容
-hasCJKLanguage: true               # 启用对中文、日文和韩文的支持
+# -------------------------------
+enableInlineShortcodes: true       # 启用内联短代码功能（更灵活地嵌入 HTML）
+enableEmoji: true                  # 支持 Emoji 表情
+enableRobotsTXT: true              # 允许搜索引擎爬取博客内容
+hasCJKLanguage: true               # 支持 CJK（中文、日文、韩文等）
 
+# -------------------------------
 # 构建设置
-buildDrafts: false                 # 不构建草稿
-buildFuture: false                 # 不构建未来的内容
-buildExpired: false                # 不构建过期的内容
+# -------------------------------
+buildDrafts: false                 # 不构建草稿文章
+buildFuture: false                 # 不构建未来的文章
+buildExpired: false                # 不构建过期文章
 
+# -------------------------------
 # 分页设置
+# -------------------------------
 pagination:
-  pagerSize: 15                    # 每页显示的文章数
+  pagerSize: 10                    # 每页显示 10 篇文章
 
+# -------------------------------
 # 最小化设置
+# -------------------------------
 minify:
   disableXML: true                 # 禁用 XML 最小化
 
-# URL 形式
+# -------------------------------
+# URL 形式设置
+# -------------------------------
 permalinks:
   post: "/:title/"                 # 文章链接格式为 /:title/
 
-# 语言设置
+# -------------------------------
+# 语言及本地化设置
+# -------------------------------
 defaultContentLanguage: zh          # 默认内容语言为中文
-defaultContentLanguageInSubdir: false   # 默认语言内容不在子目录中
+defaultContentLanguageInSubdir: false  # 默认语言内容不在子目录中
 
-# 语言配置
 languages:
   zh:
-    languageName: "中文"          # 语言名称
-    weight: 1                      # 语言权重
-    taxonomies:                    # 分类系统
+    languageName: "中文"             # 语言名称
+    weight: 1                        # 语言权重（排序时优先显示）
+    taxonomies:
       category: categories
       tag: tags
-    params:                        # 自定义参数
-      profileMode:
-        enabled: true              # 启用个人资料模式
-        title:  ":-)"              # 个人资料标题
-        subtitle: ""               # 个人资料副标题
-        imageUrl: "img/active.jpg" # 个人资料图像 URL
-        imageWidth: 150            # 图像宽度
-        imageHeight: 150           # 图像高度
+    params:
+      homeInfoParams:
+        Title: "😊 Hey Everyone!"          # 首页个人介绍标题
+        Content: >
+          在某一天，我突发灵感，决定建立这个博客，旨在分享我的一些笔记和创作灵感。
+          在这个快速变化的世界中，坚持是成功的关键。正如伟大的作家约翰·格林所说：
+          “创作是一种坚持，是一种信念。”希望我的分享能给你带来启发和帮助，让我们
+          一起在这条学习与成长的道路上前行！
 
-    # 菜单配置
+    # ---------------------------
+    # 导航菜单配置
+    # ---------------------------
     menu:
       main:
         - name: 首页
           pageRef: /
-          weight: 1                # 控制在页面上展示的前后顺序
-        - name: 文章
-          pageRef: posts
-          weight: 2
+          weight: 1
         - name: 分类
           pageRef: categories/
           weight: 3
@@ -73,114 +85,122 @@ languages:
           pageRef: about/
           weight: 21
 
-# 输出格式
+# -------------------------------
+# 输出格式配置
+# -------------------------------
 outputs:
   home:
-    - HTML                          # 首页输出格式为 HTML
-    - RSS                           # 支持 RSS 输出
-    - JSON                          # 支持 JSON 输出
+    - HTML                           # 首页输出 HTML 格式
+    - RSS                            # 支持 RSS 输出
+    - JSON                           # 支持 JSON 输出
 
-# 自定义参数设置
+# -------------------------------
+# 自定义参数配置
+# -------------------------------
 params:
-  env: production                   # 环境设置为生产环境
-  author: yfc01                    # 博主姓名
-  defaultTheme: auto                # 默认主题设置为自动
-  disableThemeToggle: false         # 启用主题切换
-  DateFormat: "2006-01-02"         # 日期格式
-  ShowShareButtons: true            # 是否显示分享按钮
-  ShowReadingTime: true             # 是否显示阅读时间
-  displayFullLangName: true         # 是否显示完整语言名称
-  ShowPostNavLinks: true            # 是否显示文章导航链接
-  ShowBreadCrumbs: false            # 是否显示面包屑导航
-  ShowCodeCopyButtons: true         # 是否显示代码复制按钮
-  hideFooter: false                 # 不隐藏页脚
-  ShowWordCounts: true              # 是否显示字数
-  VisitCount: true                  # 是否显示访问计数
-  ShowLastMod: true                 # 是否显示最后修改时间
-  ShowToc: true                     # 是否显示目录
-  TocOpen: false                    # 目录自动展开
-  comments: true                    # 启用评论功能
-  showbreadcrumbs: false             # 关闭显示当前路径 
+  env: production                    # 设为生产环境
+  author: yfc01                      # 博主姓名
+  defaultTheme: auto                 # 默认主题模式
+  disableThemeToggle: false          # 启用主题切换
+  DateFormat: "2006-01-02"           # 日期格式
+  ShowShareButtons: true             # 显示分享按钮
+  ShowReadingTime: true              # 显示阅读时间
+  ShowWordCounts: true               # 显示字数统计
+  VisitCount: true                   # 显示访问计数
+  ShowLastMod: true                  # 显示最后修改时间
+  ShowToc: true                      # 显示目录
+  TocOpen: false                     # 目录默认不展开
+  comments: true                     # 启用评论功能
 
-  # 评论的设置
+  # -----------------------------
+  # Giscus 评论配置
+  # -----------------------------
   giscus:
-    repo: "yfc01/yfc01.github.io"  # Giscus 仓库
-    repoId: "R_kgDOM33idg"                    # 仓库 ID
-    category: "Announcements"                 # 分类
-    categoryId: "DIC_kwDOM33ids4Ci1Si"        # 分类 ID
-    mapping: "pathname"                       # 映射方式
-    strict: "0"                               # 是否严格模式
-    reactionsEnabled: "1"                     # 启用反应功能
-    emitMetadata: "0"                         # 启用元数据
-    inputPosition: "bottom"                   # 输入框位置
-    lightTheme: "light"                       # 亮色主题
-    darkTheme: "dark"                         # 暗色主题
-    lang: "zh-CN"                             # 语言
-    crossorigin: "anonymous"                   # 跨域请求
+    repo: "yfc01/yfc01.github.io"
+    repoId: "R_kgDOM33idg"
+    category: "Announcements"
+    categoryId: "DIC_kwDOM33ids4Ci1Si"
+    mapping: "pathname"
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: "bottom"
+    lightTheme: "light"
+    darkTheme: "dark"
+    lang: "zh-CN"
+    crossorigin: "anonymous"
 
-  # 社交媒体图标
+  # -----------------------------
+  # 社交媒体图标配置
+  # -----------------------------
   socialIcons:
-    - name: github                            # GitHub 图标
-      url: "https://github.com/yfc01"       # GitHub 链接
-    - name: QQ                               # QQ 图标
-      url: "img/qq.jpg"                      # QQ 图像链接
-    - name: WeChat                           # 微信图标
-      url: "img/wechat.jpg"                  # 微信图像链接
-    - name: email                            # 邮件图标
-      url: "mailto:2063454530@qq.com"        # 邮件链接
+    - name: github
+      url: "https://github.com/yfc01"
+    - name: QQ
+      url: "img/qq.jpg"
+    - name: WeChat
+      url: "img/wechat.jpg"
+    - name: email
+      url: "mailto:2063454530@qq.com"
 
-  # 图标配置
+  # -----------------------------
+  # 网站图标配置
+  # -----------------------------
   assets:
-    favicon: "img/active.jpg"                 # 网站图标
-    favicon16x16: "img/active.jpg"            # 16x16 图标
-    favicon32x32: "img/active.jpg"            # 32x32 图标
-    apple_touch_icon: "img/active.jpg"       # Apple 触摸图标
-    safari_pinned_tab: "img/active.jpg"      # Safari 固定标签图标
-    disableFingerprinting: true                # 禁用指纹追踪
-    assets:
-      disableHLJS: true                        # 禁用 HighLight.js
+    favicon: "img/active.jpg"
+    favicon16x16: "img/active.jpg"
+    favicon32x32: "img/active.jpg"
+    apple_touch_icon: "img/active.jpg"
+    safari_pinned_tab: "img/active.jpg"
+    disableFingerprinting: true
 
+  # -----------------------------
+  # 页面库配置（JavaScript 特效）
+  # -----------------------------
   page:
     library:
       js:
-        live2d_min1: "/js/live2d_min1.js"      # 看板娘1的 JavaScript 文件路径
-        canvas_sphere: "/js/canvas_sphere.js"      # 蜂窝巢效果 JavaScript 文件路径
-        anime_min: "/js/anime.min.js"          # 鼠标点击特效 JavaScript 文件路径
-        fireworks: "/js/fireworks.js"          # 鼠标点击特效 JavaScript 文件路径 
-        live2d_min2: "/js/live2d_min2.js"      # 看板娘1的 JavaScript 文件路径
+        live2d_min1: "/js/live2d_min1.js"
+        canvas_sphere: "/js/canvas_sphere.js"
+        anime_min: "/js/anime.min.js"
+        fireworks: "/js/fireworks.js"
+        live2d_min2: "/js/live2d_min2.js"
 
+# -------------------------------
 # Markdown 渲染设置
+# -------------------------------
 markup:
   goldmark:
     renderer:
-      unsafe: true                             # 启用不安全 HTML 渲染
+      unsafe: true                      # 启用不安全 HTML 渲染
   highlight:
-    guessSyntax: false                         # 自动猜测代码语法
-    anchorLineNos: false                       # 不给行号设置锚标
-    codeFences: true                           # 启用代码围栏
-    noClasses: false                           # 不使用类
-    lineNos: false                             # 不显示代码行号
-    lineNumbersInTable: false                  # 不在摘要中显示行号
+    guessSyntax: false
+    codeFences: true
+    noClasses: false
+    lineNos: false
 
+# -------------------------------
 # 隐私设置
+# -------------------------------
 privacy:
   vimeo:
-    disabled: false                           # Vimeo 设置
-    simple: true                              # 简单模式
+    disabled: false
+    simple: true
   twitter:
-    disabled: false                           # Twitter 设置
-    enableDNT: true                           # 启用“Do Not Track”功能
-    simple: true                              # 简单模式
+    disabled: false
+    enableDNT: true
+    simple: true
   instagram:
-    disabled: false                           # Instagram 设置
-    simple: true                              # 简单模式
+    disabled: false
+    simple: true
   youtube:
-    disabled: false                           # YouTube 设置
-    privacyEnhanced: true                     # 启用隐私增强模式
+    disabled: false
+    privacyEnhanced: true
 
+# -------------------------------
 # 服务设置
+# -------------------------------
 services:
   instagram:
-    disableInlineCSS: true                    # 禁用 Instagram 内联 CSS
+    disableInlineCSS: true
   twitter:
-    disableInlineCSS: true                    # 禁用 Twitter 内联 CSS
+    disableInlineCSS: true
