@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     //const live2d_path = "/live2d-widget/";
     const cssPath = "/css/waifu.css";
     const live2dJsPath = "/js/live2d_min2_tool.js";
+    const live2dModel = "/live2d_min2_model"
 
     console.log(cssPath)
 
@@ -40,7 +41,8 @@ document.addEventListener("DOMContentLoaded", function () {
             initWidget({
                 waifuPath: live2d_path + "waifu-tips.json",
                 //apiPath: "https://live2d.fghrsh.net/api/",
-                cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+                // cdnPath: "https://fastly.jsdelivr.net/gh/fghrsh/live2d_api/",
+                cdnPath: live2dModel,
                 tools: ["hitokoto", "asteroids", "switch-model", "switch-texture", "photo", "info", "quit"]
             });
             // 初始化看板娘鼠标监听事件

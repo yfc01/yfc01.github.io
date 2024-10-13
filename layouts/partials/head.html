@@ -182,19 +182,19 @@
 {{ end }}
 <!-- 看板娘2号相关代码引入end -->
 
-<!-- 蜂窝巢效果相关代码引入 -->
+<!-- 球状光线效果相关代码引入 -->
 {{ with .Site.Params.page.library }}
-    {{ if .js.canvas_nest }}
-    <!-- 蜂窝巢效果元素代码 -->
-    <div id="canvas-nest-container"></div>
-    <!-- 蜂窝巢效果元素代码end -->
+    {{ if .js.canvas_sphere }}
+    <!-- 球状光线效果元素代码 -->
+    <div id="canvas-sphere-container"></div>
+    <!-- 球状光线效果元素代码end -->
 
-    <!-- 蜂窝巢效果js文件 -->
-    <script src="{{ .js.canvas_nest | relURL }}"></script>
-    <!-- 蜂窝巢效果js文件end -->
+    <!-- 球状光线效果js文件 -->
+    <script src="{{ .js.canvas_sphere | relURL }}"></script>
+    <!-- 球状光线效果js文件end -->
     {{ end }}
 {{ end }}
-<!-- 蜂窝巢效果相关代码引入end -->
+<!-- 球状光线效果相关代码引入end -->
 
 
 <!-- 鼠标点击效果相关代码引入 -->
