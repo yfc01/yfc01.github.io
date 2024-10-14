@@ -6,7 +6,6 @@ author: ["yfc01"] #作者
 categories: 
 - blog
 tags: 
-- 博客搭建
 - 看板娘
 - 博客个性化
 description: "看板娘可爱捏" #描述

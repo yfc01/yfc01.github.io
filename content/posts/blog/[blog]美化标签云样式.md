@@ -6,7 +6,6 @@ author: ["yfc01"] #作者
 categories: 
 - blog
 tags: 
-- 博客搭建
 - 博客个性化
 description: "对分类页和标签页进行美化" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
