@@ -222,7 +222,7 @@ hugo渲染html的方式是模块化的，这一点于vue组件的渲染方式是
 
 ### 添加css样式文件
 
-新建`assests/extended/toc-and-main-style.css`文件，添加如下代码。
+新建`assests/extended/toc-main-style.css`文件，添加如下代码。
 
 ```css
 :root {
