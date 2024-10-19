@@ -31,7 +31,7 @@ cover:
 
 如何查看自己的电脑有没有关睿频？有一个很简单的方法，那就是打开任务管理器，然后尝试着打开一些新的网页，比如哔哩哔哩，也可以打开一些软件，看开cpu频率是否会突然拉高，并超过cpu基准频率。如果会的话毫无疑问是开启了cpu睿频的。
 
-<img src="https://753e3422.telegraph-image-8tf.pages.dev/file/49d74448f3b465ccc4217-72eace47208110dc10.png" class="zoom-img" style="width: 80%;margin: auto;">
+<img src="https://i.postimg.cc/rpST4VcG/freecompress-1729282158420.jpg" alt="Image" data-zoomable width="80%;">
 
 值得注意的是，如果关闭了睿频会导致cpu应对突发任务能力下降。当然，在这个大部分工作都远远无法跑满cpu的时代，这样的影响在许多时候都是可以忽略不计的。不过玩网游的如果关闭了cpu睿频可能会大大影响流畅体验，即帧率可能会大大降低。
 
@@ -39,6 +39,28 @@ cover:
 
 ## 关闭睿频的步骤
 
+通过运行窗口运行regedit即可打开注册表编辑器。
+
+### 备份注册表
+
+备份注册表只需要选中对应的注册表文件，然后在菜单栏选择`文件->导出`到指定位置即可，导入备份操作类似。在进行任何注册表配置之前建议都先进行备份操作，以备不时之需。
+
+<img src="https://i.postimg.cc/DybzxKPD/freecompress-1729315283705.jpg" alt="Image" data-zoomable width="80%;">
+
 ### 修改注册表
 
+与cpu睿频有关的注册表文件的路径为`计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\PowerSettings\54533251-82be-4824-96c1-47b60b740d00\be337238-0d82-4146-a960-4f3749d470c7`。打开该路径文件夹下的Attributes选项，并将数据数值设置成为2。
+
+<img src="https://i.postimg.cc/05hVTp7Q/freecompress-1729316535116.jpg" alt="Image" data-zoomable width="80%;">
+
 ### 修改电源计划
+
+打开控制面板，进入电源计划选择界面，这里建议创建一个新的电源计划，选择创建的电源计划选项，然后点击更改计划设置。
+
+<img src="https://i.postimg.cc/CLVjCJjj/freecompress-1729317259829.jpg" alt="Image" data-zoomable width="80%;">
+
+点击更改高级电源设置，选择处理器电源管理->处理器性能提升模式，将使用电池和接通电源选项设置为已禁用。
+
+<img src="https://i.postimg.cc/8ckTDq2R/1729318630404.png" alt="Image" data-zoomable width="80%;">
+
+通过上述步骤便成功关闭了cpu睿频，需要说明的是，这是使用win11操作系统关闭睿频的步骤，win10系统步骤可能不同。
