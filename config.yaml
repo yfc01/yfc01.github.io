@@ -170,6 +170,7 @@ params:
         anime_min: "/js/anime.min.js"        # 动画特效脚本
         fireworks: "/js/fireworks.js"        # 烟花特效脚本
         live2d_min2: "/js/live2d_min2.js"    # Live2D 特效脚本（备用）
+        medium_zoom: "/js/medium_zoom.js"    # 图片放大效果
 
 # -------------------------------
 # Markdown 渲染设置
