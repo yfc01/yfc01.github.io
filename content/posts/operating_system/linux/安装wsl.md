@@ -83,7 +83,7 @@ WSL2是新一代的版本，相较于WSL1有几个显著的区别：
 安装只需要打开cmd命令行工具，找到对应要下载的版本下载即可。详细安装细节参考： <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install#install-wsl-command" target="_blank">安装 WSL | Microsoft Learn</a>。
 
 ```cmd
-## 从网络中而不是 Microsoft Store 中下载并安装指定的发行版，如果不指定发行版则会安装默认的 Ubuntu 发行版，在安装完成后会自动启动，类似于创建 Docker 容器。
+# 从网络中而不是 Microsoft Store 中下载并安装指定的发行版，如果不指定发行版则会安装默认的 Ubuntu 发行版，在安装完成后会自动启动，类似于创建 Docker 容器。
 wsl --install Ubuntu --web-download
 ```
 
@@ -97,7 +97,7 @@ wsl --install Ubuntu --web-download
 
 输入`wsl --unregister <wslname>`即可完成卸载。
 
-### 简单介绍其他功能
+### 其他功能
 
 wsl不单只支持linux原有功能，还能支持和window命令的混合使用，直接打开window安装的程序，显卡直通等功能。
 
