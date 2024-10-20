@@ -1,5 +1,5 @@
 ---
-title: "关于我"
+title: ""
 layout: about
 date: 2024-09-27T14:56:48+08:00
 hidemeta: true
@@ -20,6 +20,6 @@ cover:
     relative: false
 ---
 
-<img src="https://w.wallhaven.cc/full/3l/wallhaven-3l8lgv.png" alt="Your Image" data-zoomable width="500px;">
+😊 Hey Everyone!
 
-一个普通的互联网用户。
+在某一天，我突发灵感，决定建立这个博客，旨在分享我的一些笔记和创作灵感。 在这个快速变化的世界中，坚持是成功的关键。正如伟大的作家约翰·格林所说： “创作是一种坚持，是一种信念。”希望我的分享能给你带来启发和帮助，让我们 一起在这条学习与成长的道路上前行！

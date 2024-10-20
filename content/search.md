@@ -1,4 +1,4 @@
 ---
-title: "关键词"
+title: "搜索"
 layout: search
 ---

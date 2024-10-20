@@ -12,3 +12,26 @@ code {
   line-height: 1.2;
 }
 /* 代码字体样式end */
+
+/* 背景图片样式 */
+.list {
+  background-image: url("https://w.wallhaven.cc/full/4l/wallhaven-4lej62.jpg") !important;
+  /* 照片不重复出现 */
+  background-repeat: no-repeat;
+  /* 照片大小保持比例，裁剪溢出部分 */
+  background-size: cover;
+  /* 右侧滚动时照片固定大小 */
+  background-attachment: fixed;
+  /* 背景位置居中 */
+  background-position: center;
+}
+
+.dark.list {
+  background-image: url("https://w.wallhaven.cc/full/nz/wallhaven-nzpxmj.jpg") !important;
+  background-repeat: no-repeat;
+  background-size: cover; /* 裁剪而不改变比例 */
+  background-attachment: fixed;
+  background-position: center; /* 背景位置居中 */
+}
+/* 背景图片样式end */
+

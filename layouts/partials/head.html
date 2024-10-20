@@ -182,19 +182,15 @@
 {{ end }}
 <!-- 看板娘2号相关代码引入end -->
 
-<!-- 球状光线效果相关代码引入 -->
-<!-- {{ with .Site.Params.page.library }} -->
-    <!-- {{ if .js.canvas_sphere }} -->
-    <!-- 球状光线效果元素代码 -->
-    <!-- <div id="canvas-sphere-container"></div> -->
-    <!-- 球状光线效果元素代码end -->
-
-    <!-- 球状光线效果js文件 -->
-    <!-- <script src="{{ .js.canvas_sphere | relURL }}"></script> -->
-    <!-- 球状光线效果js文件end -->
-    <!-- {{ end }} -->
-<!-- {{ end }} -->
-<!-- 球状光线效果相关代码引入end -->
+<!-- 樱花飘落效果相关代码引入 -->
+{{ with .Site.Params.page.library }}
+    {{ if .js.background_effects }}
+    <!-- 樱花飘落效果js文件 -->
+    <script src="{{ .js.background_effects | relURL }}"></script>
+    <!-- 樱花飘落效果js文件end -->
+    {{ end }}
+{{ end }}
+<!-- 樱花飘落效果相关代码引入 -->
 
 <!-- 鼠标点击效果相关代码引入 -->
 <!-- {{ with .Site.Params.page.library }} -->
