@@ -183,42 +183,40 @@
 <!-- 看板娘2号相关代码引入end -->
 
 <!-- 球状光线效果相关代码引入 -->
-{{ with .Site.Params.page.library }}
-    {{ if .js.canvas_sphere }}
+<!-- {{ with .Site.Params.page.library }} -->
+    <!-- {{ if .js.canvas_sphere }} -->
     <!-- 球状光线效果元素代码 -->
-    <div id="canvas-sphere-container"></div>
+    <!-- <div id="canvas-sphere-container"></div> -->
     <!-- 球状光线效果元素代码end -->
 
     <!-- 球状光线效果js文件 -->
-    <script src="{{ .js.canvas_sphere | relURL }}"></script>
+    <!-- <script src="{{ .js.canvas_sphere | relURL }}"></script> -->
     <!-- 球状光线效果js文件end -->
-    {{ end }}
-{{ end }}
+    <!-- {{ end }} -->
+<!-- {{ end }} -->
 <!-- 球状光线效果相关代码引入end -->
 
-
 <!-- 鼠标点击效果相关代码引入 -->
-{{ with .Site.Params.page.library }}
-    {{ if .js.anime_min }}
-        {{ if .js.fireworks }}
+<!-- {{ with .Site.Params.page.library }} -->
+    <!-- {{ if .js.anime_min }} -->
+        <!-- {{ if .js.fireworks }} -->
 
             <!-- 鼠标点击效果元素代码 -->
-            <canvas class="fireworks"></canvas>
+            <!-- <canvas class="fireworks"></canvas> -->
             <!-- 鼠标点击效果元素代码end -->
 
             <!-- 引入鼠标点击效果的 JS 文件 -->
-            <script src="{{ .js.anime_min | relURL }}"></script>
-            <script src="{{ .js.fireworks | relURL }}"></script>
-            <script type="text/javascript">
-                fireworks.setCanvasSize(); // 设置画布大小
-            </script>
+            <!-- <script src="{{ .js.anime_min | relURL }}"></script> -->
+            <!-- <script src="{{ .js.fireworks | relURL }}"></script> -->
+            <!-- <script type="text/javascript"> -->
+                <!-- fireworks.setCanvasSize(); // 设置画布大小 -->
+            <!-- </script> -->
             <!-- 引入鼠标点击效果的 JS 文件end -->
 
-        {{ end }}
-    {{ end }}
-{{ end }}
+        <!-- {{ end }} -->
+    <!-- {{ end }} -->
+<!-- {{ end }} -->
 <!-- 鼠标点击效果相关代码引入end -->
-
 
 <!-- 鼠标点击图片放大相关代码引入 -->
 {{ with .Site.Params.page.library }}
