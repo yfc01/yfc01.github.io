@@ -172,6 +172,20 @@ params:
         live2d_min2: "/js/live2d_min2.js"    # Live2D 特效脚本（备用）
         medium_zoom: "/js/medium_zoom.js"    # 图片放大效果
 
+  # -------------------------------
+  # 添加搜索参数，参考 https://fusejs.io/api/options.html
+  # -------------------------------
+  fuseOpts:
+    isCaseSensitive: false              # 是否区分大小写，设置为 false 使搜索不区分大小写
+    includeMatches: true                 # 是否包括匹配项，设置为 true 表示在结果中包含匹配的部分
+    shouldSort: true                     # 是否对结果进行排序，设置为 true 表示按匹配程度对结果排序
+    location: 0                          # 指定搜索位置的偏移量，0 表示从开头开始搜索
+    distance: 1000                       # 指定搜索的距离，较大的值会允许更远的匹配，默认值为 100
+    threshold: 0.1                       # 搜索匹配的阈值，值越小越严格，范围从 0 到 1，0 表示完全匹配，1 表示不匹配
+    minMatchCharLength: 0                # 最小匹配字符长度，设置为 0 表示可以匹配空字符串
+    keys: ["title", "permalink", "summary", "content"] # 指定搜索的字段，可以是文章的标题、永久链接、摘要和内容
+
+
 # -------------------------------
 # Markdown 渲染设置
 # -------------------------------
