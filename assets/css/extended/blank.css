@@ -15,7 +15,7 @@ code {
 
 /* 背景图片样式 */
 .list {
-  background-image: url("https://w.wallhaven.cc/full/4l/wallhaven-4lej62.jpg") !important;
+  background-image: url("https://w.wallhaven.cc/full/wy/wallhaven-wy39p6.png") !important;
   /* 照片不重复出现 */
   background-repeat: no-repeat;
   /* 照片大小保持比例，裁剪溢出部分 */
@@ -27,7 +27,7 @@ code {
 }
 
 .dark.list {
-  background-image: url("https://w.wallhaven.cc/full/nz/wallhaven-nzpxmj.jpg") !important;
+  background-image: url("https://w.wallhaven.cc/full/dg/wallhaven-dgvr93.png") !important;
   background-repeat: no-repeat;
   background-size: cover; /* 裁剪而不改变比例 */
   background-attachment: fixed;
