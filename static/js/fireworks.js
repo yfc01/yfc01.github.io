@@ -1,4 +1,10 @@
-var fireworks = (function() {
+var fireworks = (function () {
+  const link_local = document.createElement('link');
+  link_local.rel = 'stylesheet'; // 应该改为 link_local.rel
+  link_local.href = '/css/click-fireworks.css';
+  document.body.appendChild(link_local);
+
+
   var canvasEl = document.querySelector('.fireworks');
   var ctx = canvasEl.getContext('2d');
   var numberOfParticules = Number(location.href.split('?')[1]) || 40;
@@ -30,14 +36,14 @@ var fireworks = (function() {
     }
   }
 
-  function createParticule(x,y) {
+  function createParticule(x, y) {
     var p = {};
     p.x = x;
     p.y = y;
     p.color = colors[anime.random(0, colors.length - 1)];
     p.radius = anime.random(16, 32);
     p.endPos = setParticuleDirection(p);
-    p.draw = function() {
+    p.draw = function () {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
       ctx.fillStyle = p.color;
@@ -46,7 +52,7 @@ var fireworks = (function() {
     return p;
   }
 
-  function createCircle(x,y) {
+  function createCircle(x, y) {
     var p = {};
     p.x = x;
     p.y = y;
@@ -54,7 +60,7 @@ var fireworks = (function() {
     p.radius = 0.1;
     p.alpha = .5;
     p.lineWidth = 6;
-    p.draw = function() {
+    p.draw = function () {
       ctx.globalAlpha = p.alpha;
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
@@ -80,37 +86,37 @@ var fireworks = (function() {
     }
     anime.timeline().add({
       targets: particules,
-      x: function(p) { return p.endPos.x; },
-      y: function(p) { return p.endPos.y; },
+      x: function (p) { return p.endPos.x; },
+      y: function (p) { return p.endPos.y; },
       radius: 0.1,
       duration: anime.random(1200, 1800),
       easing: 'easeOutExpo',
       update: renderParticule
     })
-    .add({
-      targets: circle,
-      radius: anime.random(80, 160),
-      lineWidth: 0,
-      alpha: {
-        value: 0,
-        easing: 'linear',
-        duration: anime.random(600, 800),  
-      },
-      duration: anime.random(1200, 1800),
-      easing: 'easeOutExpo',
-      update: renderParticule,
-      offset: 0
-    });
+      .add({
+        targets: circle,
+        radius: anime.random(80, 160),
+        lineWidth: 0,
+        alpha: {
+          value: 0,
+          easing: 'linear',
+          duration: anime.random(600, 800),
+        },
+        duration: anime.random(1200, 1800),
+        easing: 'easeOutExpo',
+        update: renderParticule,
+        offset: 0
+      });
   }
 
   var render = anime({
     duration: Infinity,
-    update: function() {
+    update: function () {
       ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
     }
   });
 
-  document.addEventListener(tap, function(e) {
+  document.addEventListener(tap, function (e) {
     window.human = true;
     render.play();
     updateCoords(e);

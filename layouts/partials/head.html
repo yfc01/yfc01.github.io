@@ -158,29 +158,16 @@
 
 <!-- 看板娘1号相关代码引入 -->
 <!-- {{ with .Site.Params.page.library }}
-  {{ if .js.live2d_min1 }} -->
-    <!-- 看板娘元素代码 -->
-    <!-- <div class="live2d_container">
+  {{ if .js.live2d_min1 }}
+    <div class="live2d_container">
         <div id="sakana-widget"></div>
-    </div> -->
-    <!-- 看板娘元素代码end -->
+    </div>
 
-    <!-- 看板娘js文件 -->
-    <!-- <script src="{{ .js.live2d_min1 | relURL }}"></script> -->
-    <!-- 看板娘js文件end -->
-  <!-- {{ end }}
+    <script src="{{ .js.live2d_min1 | relURL }}"></script>
+  {{ end }}
 {{ end }} -->
 <!-- 看板娘1号相关代码引入end -->
 
-<!-- 看板娘2号相关代码引入 -->
-{{ with .Site.Params.page.library }}
-  {{ if .js.live2d_min2 }}
-    <!-- 看板娘js文件 -->
-    <script src="{{ .js.live2d_min2 | relURL }}"></script>
-    <!-- 看板娘js文件end -->
-  {{ end }}
-{{ end }}
-<!-- 看板娘2号相关代码引入end -->
 
 <!-- 樱花飘落效果相关代码引入 -->
 {{ with .Site.Params.page.library }}
@@ -193,25 +180,21 @@
 <!-- 樱花飘落效果相关代码引入 -->
 
 <!-- 鼠标点击效果相关代码引入 -->
-<!-- {{ with .Site.Params.page.library }} -->
-    <!-- {{ if .js.anime_min }} -->
-        <!-- {{ if .js.fireworks }} -->
+<!-- {{ with .Site.Params.page.library }}
+    {{ if .js.anime_min }}
+        {{ if .js.fireworks }}
 
-            <!-- 鼠标点击效果元素代码 -->
-            <!-- <canvas class="fireworks"></canvas> -->
-            <!-- 鼠标点击效果元素代码end -->
+            <canvas class="fireworks"></canvas>
 
-            <!-- 引入鼠标点击效果的 JS 文件 -->
-            <!-- <script src="{{ .js.anime_min | relURL }}"></script> -->
-            <!-- <script src="{{ .js.fireworks | relURL }}"></script> -->
-            <!-- <script type="text/javascript"> -->
-                <!-- fireworks.setCanvasSize(); // 设置画布大小 -->
-            <!-- </script> -->
-            <!-- 引入鼠标点击效果的 JS 文件end -->
+            <script src="{{ .js.anime_min | relURL }}"></script>
+            <script src="{{ .js.fireworks | relURL }}"></script>
+            <script type="text/javascript">
+                fireworks.setCanvasSize(); // 设置画布大小
+            </script>
 
-        <!-- {{ end }} -->
-    <!-- {{ end }} -->
-<!-- {{ end }} -->
+        {{ end }}
+    {{ end }}
+{{ end }} -->
 <!-- 鼠标点击效果相关代码引入end -->
 
 <!-- 鼠标点击图片放大相关代码引入 -->
