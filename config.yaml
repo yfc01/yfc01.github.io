@@ -147,6 +147,8 @@ params:
       url: "img/wechat.jpg"           # 微信图标链接
     - name: email
       url: "mailto:2063454530@qq.com" # 邮件链接
+    - name: notion
+      url: "https://sugary-target-8ec.notion.site/HELLO-WORD-1287cee226d48045bf06e5084cd28e9b?pvs=4"
 
   # -----------------------------
   # 网站图标配置
