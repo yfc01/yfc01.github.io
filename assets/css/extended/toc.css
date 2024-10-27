@@ -70,7 +70,7 @@
 /* 目录显示时调整main元素样式 */
 .custom-style {
     margin-left: 5%;
-    width: 70%;
+    max-width: 70%;
 }
 
 /* 小于或等于1024px时禁用目录的样式 */
