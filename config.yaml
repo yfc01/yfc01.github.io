@@ -69,6 +69,9 @@ languages:
         - name: 首页                # 菜单项名称
           pageRef: /                # 页面引用，指向首页
           weight: 1                  # 权重，决定菜单显示顺序
+        - name: 笔记
+          pageRef: post
+          weight: 2
         - name: 分类
           pageRef: categories/
           weight: 3
