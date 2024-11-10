@@ -8,9 +8,9 @@ categories:
 tags: 
 - go语言基础
 - 学习总结
-description: "对go语言学习过程一些思考和记述" #描述
+description: "Summary of Go Basic Knowledge Learning" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
-slug: "go-basics-knowledge-summary"
+slug: "go basics knowledge summary"
 draft: false # 是否为草稿
 comments: true #是否展示评论
 showToc: true # 显示目录

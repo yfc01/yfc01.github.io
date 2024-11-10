@@ -10,7 +10,7 @@ tags:
 - 虚拟机
 description: "wsl是window原生支持的linux系统搭建工具" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
-slug: "wsl-install"
+slug: "Install WSL"
 draft: false # 是否为草稿
 comments: true #是否展示评论
 showToc: true # 显示目录

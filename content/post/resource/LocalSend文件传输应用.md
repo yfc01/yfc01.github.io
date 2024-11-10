@@ -10,7 +10,7 @@ tags:
 - 内网文件传输
 description: "localsend是一款开源的内网文件传输应用" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
-slug: "LocalSend-file-transfer-application"
+slug: "Localsend is an open-source internal file transfer application"
 draft: false # 是否为草稿
 comments: true #是否展示评论
 showToc: true # 显示目录

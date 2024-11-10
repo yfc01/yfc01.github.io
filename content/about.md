@@ -5,7 +5,7 @@ date: 2024-09-27T14:56:48+08:00
 hidemeta: true
 description: ""
 weight:
-slug: "about"
+slug: "About"
 draft: false # 是否为草稿
 comments: false
 reward: false

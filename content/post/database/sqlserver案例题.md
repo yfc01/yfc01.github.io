@@ -10,7 +10,7 @@ tags:
 - 数据库案例
 description: "实现一个sqlserver的数据库案例" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
-slug: "sql-server-case-study"
+slug: "SQL Server Case Study Question"
 draft: false # 是否为草稿
 comments: true #是否展示评论
 showToc: true # 显示目录
