@@ -1,0 +1,102 @@
+<style>
+    .folder-title {
+        cursor: pointer;
+        font-size: 1.2em;
+        /* 文件夹标题字体大小 */
+        margin: 10px 0;
+        /* 上下间距 */
+        transition: color 0.3s;
+        /* 颜色过渡效果 */
+    }
+
+    ul {
+        list-style-type: none;
+        /* 去掉所有列表项的标记 */
+        padding: 0;
+        /* 去掉默认的内边距 */
+        margin: 0;
+        /* 去掉默认的外边距 */
+    }
+
+    .sub-directory {
+        padding-left: 20px;
+        /* 子目录缩进 */
+        max-height: 0;
+        /* 初始高度为0，隐藏内容 */
+        overflow: hidden;
+        /* 隐藏溢出内容 */
+        transition: max-height 0.3s ease;
+        /* 添加过渡效果 */
+    }
+
+    .sub-directory.visible {
+        max-height: 100vh;
+        /* 设置一个合理的最大高度，确保内容能完全显示 */
+    }
+
+    .sub-directory a {
+        display: block;
+        /* 使链接占满整行 */
+        padding: 8px 0;
+        /* 上下间距 */
+        font-size: 1em;
+        /* 文章标题字体大小 */
+        text-decoration: none;
+        /* 去掉下划线 */
+        transition: background-color 0.3s;
+        /* 背景颜色过渡效果 */
+    }
+
+    .directory-item {
+        margin-bottom: 10px;
+        /* 每个目录项的底部间距 */
+        border-bottom: 1px solid;
+    }
+
+    .directory-item li:last-child .directory-item {
+        border-bottom: none;
+    }
+</style>
+
+<!-- partials/directory.html -->
+{{ $pages := . }}
+
+{{ if $pages }}
+<ul style="padding-left: 20px;">
+    {{- $folders := where . "IsSection" true }} <!-- 获取所有文件夹 -->
+    {{- $posts := where . "IsSection" false }} <!-- 获取所有文章 -->
+
+    <!-- 渲染文件夹 -->
+    {{ range $folders }}
+    <li>
+        <div class="directory-item">
+            <div class="folder-title" onclick="toggleVisibility(this)">🗂️ {{ .Title }}</div>
+            <ul class="sub-directory">
+                {{ if .Pages }} <!-- 如果是 Section，递归渲染其子页面 -->
+                {{ partial "directory_structure.html" .Pages }}
+                {{ end }}
+            </ul>
+        </div>
+    </li>
+    {{ end }}
+
+    <!-- 渲染文章 -->
+    {{ range $posts }}
+    <li>
+        <div class="directory-item">
+            <a href="{{ .RelPermalink }}">📃 {{ .Title }}</a>
+        </div>
+    </li>
+    {{ end }}
+</ul>
+{{ end }}
+
+<script>
+    function toggleVisibility(element) {
+        const subDirectory = element.nextElementSibling; // 获取下一个兄弟元素
+        if (subDirectory) {
+            // 切换显示状态
+            subDirectory.classList.toggle("visible"); // 切换可见性类
+        }
+    }
+</script>

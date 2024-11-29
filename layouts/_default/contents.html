@@ -3,8 +3,7 @@
 {{ $firstPage := index (where .Site.Pages "Section" "post") 0 }}
 
 {{ if $firstPage }}
-<a href="{{ $firstPage.RelPermalink }}">{{ $firstPage.Title }}</a>
-{{ partial "directory-structure.html" $firstPage.Pages }} <!-- 调用部分以生成目录 -->
+{{ partial "directory_structure.html" $firstPage.Pages }} <!-- 调用部分以生成目录 -->
 {{ else }}
 <p>No posts found.</p>
 {{ end }}
