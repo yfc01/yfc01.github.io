@@ -6,7 +6,7 @@ author: ["yfc01"] #作者
 categories: 
 - linux
 tags: 
-- wsl2
+- wsl
 - 虚拟机
 description: "wsl是window原生支持的linux系统搭建工具" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序

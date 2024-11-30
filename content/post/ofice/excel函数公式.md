@@ -7,7 +7,6 @@ categories:
 - ofice
 tags: 
 - excel函数公式
-- ofice
 description: "excel中的函数运算功能是数据处理的重要工具" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: "Excel function formula"

@@ -7,7 +7,6 @@ categories:
 - database
 tags: 
 - sql server
-- 数据库案例
 description: "实现一个sqlserver的数据库案例" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: "SQL Server Case Study Question"

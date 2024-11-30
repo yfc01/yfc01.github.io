@@ -6,8 +6,7 @@ author: ["yfc01"] #作者
 categories: 
 - windows
 tags: 
-- v2rayN
-- 路由规则
+- v2rayN路由白名单
 description: "v2rayN的一些使用方法" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: "V2rayN routing whitelist"
