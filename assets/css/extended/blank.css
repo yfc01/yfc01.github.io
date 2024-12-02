@@ -11,27 +11,61 @@ code {
   font-size: 1rem;
   line-height: 1.2;
 }
+
 /* 代码字体样式end */
 
 /* 背景样式 */
 .list {
+  position: relative;
+  /* 确保伪元素可以覆盖在元素上 */
   background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-  /* 照片不重复出现 */
+  background: url(https://w.wallhaven.cc/full/yx/wallhaven-yxdzzl.jpg);
   background-repeat: no-repeat;
-  /* 照片大小保持比例，裁剪溢出部分 */
   background-size: cover;
-  /* 右侧滚动时照片固定大小 */
   background-attachment: fixed;
-  /* 背景位置居中 */
   background-position: center;
+}
+
+.list::before {
+  content: '';
+  /* 伪元素必须有内容 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* 白色半透明背景 */
+  backdrop-filter: blur(5px);
+  /* 添加模糊效果 */
+  z-index: -1;
+  /* 将伪元素放到内容的下层 */
 }
 
 .dark.list {
   background: linear-gradient(135deg, #292a3a, #536976);
+  background: url(https://w.wallhaven.cc/full/yx/wallhaven-yxdzzl.jpg);
   background-repeat: no-repeat;
-  background-size: cover; /* 裁剪而不改变比例 */
+  background-size: cover;
+  /* 裁剪而不改变比例 */
   background-attachment: fixed;
-  background-position: center; /* 背景位置居中 */
+  background-position: center;
+  /* 背景位置居中 */
+}
+
+.dark::before {
+  content: '';
+  /* 伪元素必须有内容 */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 白色半透明背景 */
+  backdrop-filter: blur(5px);
+  /* 添加模糊效果 */
+  z-index: -1;
+  /* 将伪元素放到内容的下层 */
 }
 /* 背景样式end */
-
