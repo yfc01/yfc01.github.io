@@ -9,7 +9,7 @@ tags:
 - go语言基础
 description: "Summary of Go Basic Knowledge Learning" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
-slug: "go basics knowledge summary"
+slug: "Summary of Go Basic Knowledge Learning"
 draft: false # 是否为草稿
 comments: true #是否展示评论
 showToc: true # 显示目录

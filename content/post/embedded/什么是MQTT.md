@@ -6,7 +6,7 @@ author: ["yfc01"] #作者
 categories: 
 - embedded
 tags: 
-- mqtt
+- MTQQ
 description: " MQTT 是一种基于标准的消息传递协议或规则集" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
 slug: "What is MQTT"

@@ -176,5 +176,3 @@ $ ls -l testfile                #查看文件的时间属性
 ## 参考资料
 
 <a href="https://www.runoob.com/linux/linux-tutorial.html" target="_blank">Linux 教程 | 菜鸟教程</a>
-
-<a href="https://chatgpt.com" target="_blank">ChatGPT</a>

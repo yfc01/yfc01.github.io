@@ -9,7 +9,7 @@ tags:
 - gin中间件
 description: "便于进行接口调试" #描述
 weight: # 输入1可以顶置文章，用来给文章展示排序，不填就默认按时间排序
-slug: ""
+slug: "Add middleware for printing requests and response data in gin"
 draft: false # 是否为草稿
 comments: true #是否展示评论
 showToc: true # 显示目录

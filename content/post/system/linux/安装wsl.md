@@ -105,8 +105,6 @@ wsl不单只支持linux原有功能，还能支持和window命令的混合使用
 
 <a href="https://learn.microsoft.com/zh-cn/windows/wsl/about" target="_blank">什么是适用于 Linux 的 Windows 子系统 | Microsoft Learn</a>
 
-<a href="https://chatgpt.com" target="_blank">ChatGPT</a>
-
 <a href="https://www.bilibili.com/video/BV1tW42197za" target="_blank">超详细的WSL教程：Windows上的Linux子系统_哔哩哔哩_bilibili</a>
 
 <a href="https://learn.microsoft.com/zh-cn/windows/wsl/install#install-wsl-command" target="_blank">安装 WSL | Microsoft Learn</a>
