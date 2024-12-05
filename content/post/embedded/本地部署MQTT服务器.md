@@ -251,5 +251,3 @@ emqx.service: Failed with result 'exit-code'.
 <a href="https://docs.emqx.com/zh/emqx/latest/durability/durability_introduction.html" target="_blank">MQTT 会话持久化</a>
 
 <a href="https://docs.emqx.com/zh/emqx/v5.8.2/hocon/" target="_blank">EMQX 开源版配置手册</a>
-
-<a href="https://www.emqx.com/zh/blog/mqtt-session" target="_blank">MQTT 持久会话与 Clean Session 详解 | EMQ</a>
