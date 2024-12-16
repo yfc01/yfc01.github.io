@@ -84,7 +84,7 @@ systemd=true
 
 ## 添加认证方式
 
-这一步可以查看 <a href="https://blog.csdn.net/weixin_41542513/article/details/134328627" target="_blank">Windows系统下本地MQTT服务器搭建（保姆级教程）_mqtt windows-CSDN博客</a> ，里面详细介绍了如何通过在通过EMQX和MQTTX实现利用MQTT通信的案例。
+这一步可以查看 <a href="https://blog.csdn.net/weixin_41542513/article/details/134328627" target="_blank">Windows系统下本地MQTT服务器搭建（保姆级教程）_mqtt windows-CSDN博客</a> ，里面详细介绍了如何通过EMQX和MQTTX实现利用MQTT通信的案例。
 
 ## 使用 Go SDK 连接
 
