@@ -101,25 +101,29 @@ outputs:
 # 自定义参数配置
 # -------------------------------
 params:
-  env: production                   # 环境设置为生产环境
-  author: yfc01                    # 博主姓名，用于文章展示
-  defaultTheme: auto                # 默认主题设置为自动，根据用户偏好选择主题
-  disableThemeToggle: false         # 启用主题切换功能，允许用户在不同主题间切换
-  DateFormat: "2006-01-02"         # 日期格式，定义日期显示格式
-  ShowShareButtons: true            # 是否显示分享按钮，方便用户分享内容
-  ShowReadingTime: true             # 是否显示阅读时间，提供阅读时间预估
-  displayFullLangName: true         # 是否显示完整语言名称，提升用户体验
-  ShowPostNavLinks: true            # 是否显示文章导航链接，方便用户浏览
-  ShowBreadCrumbs: false            # 是否显示面包屑导航，帮助用户了解当前位置
-  ShowCodeCopyButtons: true         # 是否显示代码复制按钮，方便用户复制代码
-  hideFooter: false                 # 不隐藏页脚，保持页脚内容显示
-  ShowWordCounts: true              # 是否显示字数，提供文章字数信息
-  VisitCount: true                  # 是否显示访问计数，跟踪文章访问量
-  ShowLastMod: true                 # 是否显示最后修改时间，提供文章更新信息
-  ShowToc: true                     # 是否显示目录，帮助用户快速导航
-  TocOpen: false                    # 目录是否自动展开，提升可读性
-  comments: true                    # 启用评论功能，允许用户对文章评论
-  showbreadcrumbs: false             # 关闭显示当前路径，影响面包屑导航
+  env: production                   # 设置当前环境为生产环境
+  author: yfc01                     # 博主姓名，用于文章中显示
+  defaultTheme: auto                 # 默认主题设置为自动，自动选择合适的主题（根据用户偏好）
+  disableThemeToggle: false          # 启用主题切换功能，允许用户在深色/浅色主题之间切换
+  DateFormat: "2006-01-02"          # 设置日期格式，控制文章日期的显示格式
+  ShowShareButtons: true             # 启用分享按钮，方便读者将文章分享到社交平台
+  ShowReadingTime: true              # 显示文章阅读时间，帮助读者了解阅读时长
+  displayFullLangName: true          # 显示完整的语言名称，提升用户体验
+  ShowPostNavLinks: true             # 显示文章的上下篇导航链接，方便用户浏览
+  ShowBreadCrumbs: false            # 关闭面包屑导航，帮助用户知道当前页面在网站中的位置
+  ShowCodeCopyButtons: true         # 启用代码复制按钮，方便用户复制文章中的代码
+  hideFooter: false                 # 不隐藏页脚，保持页脚内容显示在页面底部
+  ShowWordCounts: true              # 显示文章字数，帮助用户了解文章长度
+  VisitCount: true                  # 启用访问计数功能，统计文章被访问的次数
+  ShowLastMod: true                 # 显示最后修改时间，展示文章最近一次的更新时间
+  ShowToc: true                     # 启用目录显示，帮助用户快速浏览文章结构
+  TocOpen: false                    # 设置目录是否自动展开，默认关闭以提高可读性
+  comments: true                    # 启用评论功能，允许读者对文章进行评论
+  showbreadcrumbs: false            # 关闭显示当前路径，影响面包屑导航
+  enableCopyright: true             # 启用文章版权声明，表明文章的版权归属
+  licenseLink: "https://creativecommons.org/licenses/by-nc/4.0/"  # 设置版权声明链接，指向相应的许可证页面
+  licenseName: "CC BY-NC 4.0"       # 设置版权许可证类型，表明文章采用的是"署名-非商业性使用 4.0 国际"许可证
+
 
   # -----------------------------
   # Giscus 评论配置
