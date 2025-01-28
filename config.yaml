@@ -54,12 +54,18 @@ languages:
       tag: tags                     # 标签的名称
     params:
       profileMode:
-        enabled: true              # 启用个人资料模式
+        enabled: false              # 启用个人资料模式
         title:  ":-)"              # 个人资料标题
         subtitle: ""  # 个人资料副标题
         imageUrl: "img/active.jpg" # 个人资料图像 URL
         imageWidth: 150            # 图像宽度
         imageHeight: 150           # 图像高度
+      homeInfoParams:
+        # 首页的 profile 内容
+        Title: "Hi my friend 🌹"
+        # 首页的 profile 内容
+        Content: >
+          欢迎来到我的博客！这是我专门搭建用于云存储笔记的站点，希望我的笔记可以给您提供帮助。如果您想流畅访问该站点，请使用梯子。
 
     # ---------------------------
     # 导航菜单配置
