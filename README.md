@@ -10,7 +10,7 @@
 
 ## 安装
 ### 环境要求
-- <a href="https://gohugo.io/" target="_blank">Hugo</a> v0.134.3
+- <a href="https://gohugo.io/" target="_blank">Hugo</a> v0.142.0
 
 ### 安装步骤
 
