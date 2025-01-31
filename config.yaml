@@ -3,7 +3,7 @@
 # -------------------------------
 baseURL: https://yfc01.github.io  # 博客的基本 URL，用于生成链接
 languageCode: zh-cn                # 默认语言为中文简体
-title: Thoughts and Musings        # 博客的标题
+title: yfc01's blog        # 博客的标题
 theme: hugo-PaperMod               # 使用的主题，选择一个适合的 Hugo 主题
 
 # -------------------------------
