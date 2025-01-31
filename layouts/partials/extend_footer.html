@@ -3,7 +3,7 @@
 {{- /* Footer custom content area end */ -}}
 
 <!-- 看板娘1号相关代码引入 -->
-<!-- {{ with .Site.Params.page.library }}
+{{ with .Site.Params.page.library }}
   {{ if .js.live2d_min1 }}
     <div class="live2d_container">
         <div id="sakana-widget"></div>
@@ -11,15 +11,15 @@
 
     <script src="{{ .js.live2d_min1 | relURL }}"></script>
   {{ end }}
-{{ end }} -->
+{{ end }}
 <!-- 看板娘1号相关代码引入end -->
 
 <!-- 看板娘2号相关代码引入 -->
-{{ with .Site.Params.page.library }}
+<!-- {{ with .Site.Params.page.library }}
   {{ if .js.live2d_min2 }}
     <script src="{{ .js.live2d_min2 | relURL }}"></script>
   {{ end }}
-{{ end }}
+{{ end }} -->
 <!-- 看板娘2号相关代码引入end -->
 
 <!-- 樱花飘落效果相关代码引入 -->
