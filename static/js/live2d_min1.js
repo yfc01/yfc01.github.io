@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', function() {
     script.src = 'https://cdn.jsdelivr.net/npm/sakana-widget@2.7.0/lib/sakana.min.js';
     script.async = true;
     script.onload = function() {
-        new SakanaWidget().mount('#sakana-widget');
+        var sakanaCharacter = new SakanaWidget({ character: 'chisato' }).mount('#sakana-widget');
+
+        sakanaCharacter.triggerAutoMode();
     }
     document.body.appendChild(script);
 

@@ -52,7 +52,7 @@
 
 .toc .inner::-webkit-scrollbar-thumb {  /* 滚动条样式 */
     background: var(--border);
-    border: 7px solid var(--theme);
+    /* border: 7px solid var(--theme); */
     border-radius: var(--radius);
 }
 
