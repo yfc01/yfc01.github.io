@@ -289,7 +289,7 @@ int main() {
 }
 ```
 
-### 代码说明：
+代码说明：
 
 1. **`cJSON_Parse`**：
    - 该函数将 JSON 字符串解析为 `cJSON` 对象。如果解析失败，返回 `NULL`，可以通过 `cJSON_GetErrorPtr` 获取错误信息。
