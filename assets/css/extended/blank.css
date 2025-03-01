@@ -1,7 +1,6 @@
 /*
-This is just a placeholder blank stylesheet so as to support adding custom styles budled with theme's default styles
-
-Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info
+  This is just a placeholder blank stylesheet to support adding custom styles bundled with the theme's default styles.
+  Read https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#bundling-custom-css-with-themes-assets for more info.
 */
 
 /* 代码字体样式 */
@@ -11,22 +10,14 @@ code {
   font-size: 1rem;
   line-height: 1.2;
 }
-
-/* 代码字体样式end */
+/* 代码字体样式 end */
 
 /* 背景样式 */
-.list {
+.light.list {
   position: relative;
-  /* 确保伪元素可以覆盖在元素上 */
-  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
-  background: url("/img/bgkimg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
 }
 
-.list::before {
+.light.list::before {
   content: '';
   /* 伪元素必须有内容 */
   position: fixed;
@@ -34,26 +25,29 @@ code {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(245, 245, 245, 0.5);
-  /* 白色半透明背景 */
-  backdrop-filter: blur(5px);
-  /* 添加模糊效果 */
-  z-index: -1;
-  /* 将伪元素放到内容的下层 */
+  height: 120%; /* 增加高度 */
+  background: url("/img/email-pattern.png");
+  z-index: -1; /* 放到内容下层 */
 }
 
+.light.list::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(232,232,232, 0.2);
+  backdrop-filter: blur(1px); 
+  z-index: -1;
+}
+
+/* 深色模式 */
 .dark.list {
-  background: linear-gradient(135deg, #292a3a, #536976);
-  background: url("/img/bgkimg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* 裁剪而不改变比例 */
-  background-attachment: fixed;
-  background-position: center;
-  /* 背景位置居中 */
+  position: relative;
 }
 
-.dark::before {
+.dark.list::before {
   content: '';
   /* 伪元素必须有内容 */
   position: fixed;
@@ -61,12 +55,20 @@ code {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(29, 30, 32, 0.8);
-  /* 白色半透明背景 */
-  backdrop-filter: blur(2px);
-  /* 添加模糊效果 */
+  height: 120%; /* 增加高度 */
+  background: url("/img/darkness.png");
   z-index: -1;
-  /* 将伪元素放到内容的下层 */
 }
 
-/* 背景样式end */
+.dark.list::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  backdrop-filter: none;
+  z-index: -1;
+}
+/* 背景样式 end */

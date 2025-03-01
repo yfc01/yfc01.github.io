@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	// 樱花数量
 	var sakuraNum = 21;
 	// 樱花越界限制次数, -1不做限制,无限循环
-	var limitTimes = 2;
+	var limitTimes = 1;
 
 	// 定义限制数组
 	var limitArray = new Array(sakuraNum);
