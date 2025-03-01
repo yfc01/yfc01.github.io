@@ -1,0 +1,11 @@
+.zoom-img {
+    transition: transform 0.2s;
+    /* 添加动画效果 */
+}
+
+.zoom-img:active {
+    transform: scale(1.5);
+    /* 放大比例 */
+    cursor: pointer;
+    /* 鼠标变为手型 */
+}

@@ -1,0 +1,88 @@
+/* 目录容器样式 */
+.toc-container {
+    position: fixed; /* 固定位置在侧边 */
+    top: 90px;
+    right: 0;
+    width: 25%;
+    max-height: 50vh; /* 避免超过屏幕高度 */
+    overflow-y: hidden; /* 禁用自身的滚动条 */
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: var(--radius);
+    padding: 0.4em;
+    z-index: 0; 
+    transition: top 0.2s ease-in-out; /* 添加平滑动画 */
+}
+
+/* 滚动超过100px时的样式 */
+.toc-container.scrolled {
+    top: 5px; /* 向上滑动 */
+}
+
+/* 目录内容样式 */
+.toc {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.toc details summary {
+    cursor: pointer; /* 鼠标指针样式 */
+    margin-inline-start: 10px;
+    padding: 12px 0;
+}
+
+.toc details[open] summary {
+    font-weight: 500;
+}
+
+.toc ul {
+    list-style-type: circle;
+    /* padding-left: 20px; */
+    margin: 0;
+}
+
+.toc .inner {
+    margin: 0;
+    padding: 0 15px 15px 20px;
+    font-size: 16px;
+    max-height: 40vh; /* 保持合理高度，确保能够显示内容 */
+    overflow-y: auto; /* 启用内部滚动 */
+}
+
+.toc .inner::-webkit-scrollbar-thumb {  /* 滚动条样式 */
+    background: var(--border);
+    /* border: 7px solid var(--theme); */
+    border-radius: var(--radius);
+}
+
+/* 列表样式 */
+.toc li {
+    list-style: none;
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+}
+
+.toc li a:hover {
+    color: var(--secondary);
+}
+
+/* 目录显示时调整main元素样式 */
+.custom-style {
+    margin-left: 5%;
+    max-width: 70%;
+}
+
+/* 小于或等于1024px时禁用目录的样式 */
+@media (max-width: 1024px) {
+    .toc-container {
+        position: static; /* 设置position属性失效 */
+        width: 100%;
+        max-height: 90vh; /* 保持合理高度 */
+    }
+
+    .custom-style {
+        margin: 0 auto;
+        max-width: 100%; /* main元素恢复正常宽度 */
+    }
+}

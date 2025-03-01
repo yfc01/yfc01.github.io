@@ -1,0 +1,11 @@
+{{- define "main" }}
+
+{{ $firstPage := index (where .Site.Pages "Section" "post") 0 }}
+
+{{ if $firstPage }}
+{{ partial "directory_structure.html" $firstPage.Pages }} <!-- 调用部分以生成目录 -->
+{{ else }}
+<p>No posts found.</p>
+{{ end }}
+
+{{- end }}{{/* end main */ -}}

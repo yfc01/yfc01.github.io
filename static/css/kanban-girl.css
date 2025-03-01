@@ -1,0 +1,21 @@
+.live2d_container {
+    position: fixed;
+    /* 设置固定定位 */
+    right: 0;
+    /* 距离屏幕右侧0像素 */
+    bottom: 0;
+    z-index: 5;
+    /* 确保容器在其他元素之上 */
+}
+
+.live2d_container a {
+    border-bottom: none;
+}
+
+/* 媒体查询：当屏幕宽度小于1024像素时隐藏容器 */
+@media (max-width: 1024px) {
+    .live2d_container {
+        display: none;
+        /* 隐藏容器 */
+    }
+}
