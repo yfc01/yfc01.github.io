@@ -145,7 +145,7 @@ params:
     repoId: "R_kgDOOBYJ3Q"           # GitHub 仓库 ID
     category: "Announcements"         # 讨论类别，影响评论的分类
     categoryId: "DIC_kwDOOBYJ3c4Cnc8n" # 类别 ID
-    mapping: "pathname"               # 评论关联的路径
+    mapping: "title"               # 评论关联的路径
     reactionsEnabled: "1"             # 启用反应功能，允许用户对评论进行反应
     emitMetadata: "0"                 # 是否发出元数据
     inputPosition: "bottom"           # 评论输入框位置

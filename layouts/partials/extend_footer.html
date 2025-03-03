@@ -8,7 +8,6 @@
     <div class="live2d_container">
         <div id="sakana-widget"></div>
     </div>
-
     <script src="{{ .js.live2d_min1 | relURL }}"></script>
   {{ end }}
 {{ end }}
@@ -25,9 +24,7 @@
 <!-- 樱花飘落效果相关代码引入 -->
 {{ with .Site.Params.page.library }}
     {{ if .js.background_effects }}
-    <!-- 樱花飘落效果js文件 -->
     <script src="{{ .js.background_effects | relURL }}"></script>
-    <!-- 樱花飘落效果js文件end -->
     {{ end }}
 {{ end }}
 <!-- 樱花飘落效果相关代码引入 -->
@@ -36,15 +33,12 @@
 {{ with .Site.Params.page.library }}
     {{ if .js.anime_min }}
         {{ if .js.fireworks }}
-
             <canvas class="fireworks"></canvas>
-
             <script src="{{ .js.anime_min | relURL }}"></script>
             <script src="{{ .js.fireworks | relURL }}"></script>
             <script type="text/javascript">
-                fireworks.setCanvasSize(); // 设置画布大小
+                fireworks.setCanvasSize(); 
             </script>
-
         {{ end }}
     {{ end }}
 {{ end }}
@@ -53,19 +47,12 @@
 <!-- 鼠标点击图片放大相关代码引入 -->
 {{ with .Site.Params.page.library }}
     {{ if .js.medium_zoom }}
-        <!-- 引入鼠标点击效果的 JS 文件 -->
         <script src="{{ .js.medium_zoom | relURL }}"></script>
         <script type="text/javascript">
             document.addEventListener('DOMContentLoaded', function () {
                 mediumZoom('[data-zoomable]', { background: "transparent" });
             });
         </script>
-        <!-- 引入鼠标点击效果的 JS 文件end -->
     {{ end }}
 {{ end }}
 <!-- 鼠标点击图片放大相关代码引入end -->
-
-{{ if (.Params.mermaid) }}
-<!-- MermaidJS support -->
-<script async src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-{{ end }}
