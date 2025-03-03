@@ -148,7 +148,7 @@ params:
     mapping: "title"               # 评论关联的路径
     reactionsEnabled: "1"             # 启用反应功能，允许用户对评论进行反应
     emitMetadata: "0"                 # 是否发出元数据
-    inputPosition: "bottom"           # 评论输入框位置
+    inputPosition: "pathname"           # 评论输入框位置
     lightTheme: "light"               # 日间主题
     darkTheme: "dark"                 # 夜间主题
     lang: "zh-CN"                     # 评论语言
