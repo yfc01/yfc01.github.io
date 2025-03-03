@@ -160,14 +160,10 @@ params:
   socialIcons:
     - name: github                    # 社交媒体名称
       url: "https://github.com/yfc01" # GitHub 个人主页链接
-    # - name: QQ
-    #   url: "img/qq.jpg"               # QQ 图标链接
-    # - name: WeChat
-    #   url: "img/wechat.jpg"           # 微信图标链接
     - name: email
       url: "mailto:2063454530@qq.com" # 邮件链接
     # - name: notion
-    #   url: "https://sugary-target-8ec.notion.site/HELLO-WORD-1287cee226d48045bf06e5084cd28e9b?pvs=4"
+    #   url: ""
 
   # -----------------------------
   # 网站图标配置
